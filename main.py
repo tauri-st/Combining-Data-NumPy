@@ -1,8 +1,9 @@
 import csv
 import numpy as np
 
-# ADD CODE: Convert titanic1.csv
-
+with open("titanic1.csv", "r") as file:
+  # ADD CODE: Convert titanic1.csv
+  data1 = csv.reader(file,delimiter=",")
 
 # ADD CODE: Convert titanic2.csv 
 
