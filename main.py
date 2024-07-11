@@ -22,3 +22,6 @@ combined_data = np.concatenate((titanic_data1, titanic_data2), axis=0)
 # ADD CODE: Print out shape and number of dimensions of merged dataset
 print(combined_data.shape)
 print(combined_data.ndim)
+
+#Transform the Numpy array back into a regular list
+listify = combined_data.tolist()
