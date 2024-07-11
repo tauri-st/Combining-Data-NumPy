@@ -25,3 +25,13 @@ print(combined_data.ndim)
 
 #Transform the Numpy array back into a regular list
 listify = combined_data.tolist()
+
+#Empty list to store the data once it's made into a string
+titanic_lists_to_string = []
+
+#Loop through the list of lists
+for titanic_lists in listify:
+  #Specify the delimeter between the data and use join to    convert the data into a string
+  titanic_string = (",").join(titanic_lists)
+  titanic_lists_to_string.append(titanic_string)
+  
