@@ -37,3 +37,10 @@ for titanic_lists in listify:
 
 #transform the NumPy array, which is now stored in titanic_lists_to_string, into a string
 complete_titanic = ("\n").join(titanic_lists_to_string)
+
+#write the string to a CSV file
+with open("titanic.csv", "w") as file:
+  #select the headers and data columns you like to add to the CSV file
+  ('Survived,Pclass,Name,Sex,Age,Siblings/Spouses Aboard,Parents/Children Aboard,Fare\n')
+  #write the data to the CSV file
+  file.write(complete_titanic)
