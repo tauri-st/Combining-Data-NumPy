@@ -34,4 +34,6 @@ for titanic_lists in listify:
   #Specify the delimeter between the data and use join to    convert the data into a string
   titanic_string = (",").join(titanic_lists)
   titanic_lists_to_string.append(titanic_string)
-  
+
+#transform the NumPy array, which is now stored in titanic_lists_to_string, into a string
+complete_titanic = ("\n").join(titanic_lists_to_string)
