@@ -3,9 +3,10 @@ import numpy as np
 
 with open("titanic1.csv", "r") as file:
   # ADD CODE: Convert titanic1.csv
-  data1 = csv.reader(file,delimiter=",")
-  headers = next(data1)
-  data_list = list(data1)
+  data = csv.reader(file,delimiter=",")
+  headers = next(data)
+  data_list = list(data)
+  titanic_data1 = np.array(data_list)
 
 # ADD CODE: Convert titanic2.csv 
 
